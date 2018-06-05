@@ -1,0 +1,169 @@
+func main
+. n
+.[] a, 1000
+. j
+. i
+. sqrt_n
+. x
+.< n
+. temp_0
+= temp_0, n
+= x, temp_0
+: while_loop_0
+. temp_1
+= temp_1, x
+. temp_2
+= temp_2, n
+. temp_3
+= temp_3, x
+. temp_4
+/ temp_4, temp_2, temp_3
+. temp_5
+> temp_5, temp_1, temp_4
+. temp_6
+== temp_6, temp_5, 0
+?:= label_0, temp_6
+. temp_7
+= temp_7, x
+. temp_8
+= temp_8, n
+. temp_9
+= temp_9, x
+. temp_10
+/ temp_10, temp_8, temp_9
+. temp_11
++ temp_11, temp_7, temp_10
+. temp_12
+= temp_12, 2
+. temp_13
+/ temp_13, temp_11, temp_12
+= x, temp_13
+:= while_loop_0
+: label_0
+. temp_14
+= temp_14, x
+= sqrt_n, temp_14
+. temp_15
+= temp_15, 2
+= i, temp_15
+: while_loop_1
+. temp_16
+= temp_16, i
+. temp_17
+= temp_17, n
+. temp_18
+<= temp_18, temp_16, temp_17
+. temp_19
+== temp_19, temp_18, 0
+?:= label_1, temp_19
+. temp_20
+= temp_20, i
+. temp_21
+= temp_21, 0
+[]= a, temp_20, temp_21
+. temp_22
+= temp_22, i
+. temp_23
+= temp_23, 1
+. temp_24
++ temp_24, temp_22, temp_23
+= i, temp_24
+:= while_loop_1
+: label_1
+. temp_25
+= temp_25, 2
+= i, temp_25
+: while_loop_2
+. temp_26
+= temp_26, i
+. temp_27
+= temp_27, sqrt_n
+. temp_28
+<= temp_28, temp_26, temp_27
+. temp_29
+== temp_29, temp_28, 0
+?:= label_2, temp_29
+. temp_30
+= temp_30, i
+. temp_31
+= temp_31, 0
+. temp_32
+=[] temp_32, a, temp_30
+== temp_32, temp_32, temp_31
+?:= label_3, temp_32
+:= label_4
+: label_3
+. temp_33
+= temp_33, i
+. temp_34
+= temp_34, i
+. temp_35
++ temp_35, temp_33, temp_34
+= j, temp_35
+: while_loop_3
+. temp_36
+= temp_36, j
+. temp_37
+= temp_37, n
+. temp_38
+<= temp_38, temp_36, temp_37
+. temp_39
+== temp_39, temp_38, 0
+?:= label_5, temp_39
+. temp_40
+= temp_40, j
+. temp_41
+= temp_41, 1
+[]= a, temp_40, temp_41
+. temp_42
+= temp_42, j
+. temp_43
+= temp_43, i
+. temp_44
++ temp_44, temp_42, temp_43
+= j, temp_44
+:= while_loop_3
+: label_5
+: label_4
+. temp_45
+= temp_45, i
+. temp_46
+= temp_46, 1
+. temp_47
++ temp_47, temp_45, temp_46
+= i, temp_47
+:= while_loop_2
+: label_2
+. temp_48
+= temp_48, 2
+= i, temp_48
+. is_prime
+. temp_49
+= temp_49, 0
+: for_each_loop_4
+=[] is_prime, a, temp_49
+. temp_50
+= temp_50, is_prime
+. temp_51
+= temp_51, 0
+. temp_52
+== temp_52, temp_50, temp_51
+?:= label_6, temp_52
+:= label_7
+: label_6
+.> i
+: label_7
+. temp_53
+= temp_53, i
+. temp_54
+= temp_54, 1
+. temp_55
++ temp_55, temp_53, temp_54
+= i, temp_55
+. temp_56
+= temp_56, temp_49
++ temp_49, temp_56, 1
+. temp_57
+< temp_57, temp_49, 1000
+?:= for_each_loop_4, temp_57
+endfunc

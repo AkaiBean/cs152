@@ -1,0 +1,8 @@
+program: functions {printf("pro -> functions)
+functions:  /*epsilon */  functions -> epsilon
+            | function functions printf functions -> function functions)
+function: FUNCTION IDENT SEMICOLON BEGINPARAMS declarations ENDPARAMS 
+
+declarations:   /*epsilon*/ 
+                |decl semicolon declarations*/
+

@@ -1,0 +1,212 @@
+func main
+. n
+. k
+. j
+. i
+.[] t, 20
+.< i
+.< j
+. temp_0
+= temp_0, 0
+= k, temp_0
+. temp_1
+= temp_1, 20
+= n, temp_1
+: do_while_loop_0
+. temp_2
+= temp_2, k
+. temp_3
+= temp_3, k
+[]= t, temp_2, temp_3
+. temp_4
+= temp_4, k
+. temp_5
+= temp_5, 1
+. temp_6
++ temp_6, temp_4, temp_5
+= k, temp_6
+. temp_7
+= temp_7, k
+. temp_8
+= temp_8, 2
+. temp_9
+% temp_9, temp_7, temp_8
+. temp_10
+= temp_10, 0
+. temp_11
+== temp_11, temp_9, temp_10
+?:= label_0, temp_11
+:= label_1
+: label_0
+:= do_while_loop_check_1
+: label_1
+. temp_12
+= temp_12, k
+. temp_13
+= temp_13, 1
+. temp_14
+- temp_14, temp_12, temp_13
+.[]> t, temp_14
+: do_while_loop_check_1
+. temp_15
+= temp_15, k
+. temp_16
+= temp_16, n
+. temp_17
+< temp_17, temp_15, temp_16
+?:= do_while_loop_0, temp_17
+. temp_18
+= temp_18, i
+. temp_19
+= temp_19, j
+. temp_20
+< temp_20, temp_18, temp_19
+. temp_21
+= temp_21, j
+. temp_22
+= temp_22, n
+. temp_23
+< temp_23, temp_21, temp_22
+. temp_24
+= temp_24, i
+. temp_25
+= temp_25, 0
+. temp_26
+>= temp_26, temp_24, temp_25
+. temp_27
+&& temp_27, temp_23, temp_26
+. temp_28
+&& temp_28, temp_20, temp_27
+?:= label_2, temp_28
+:= label_3
+: label_2
+. temp_29
+= temp_29, i
+. temp_30
+= temp_30, i
+. temp_31
+= temp_31, 2
+. temp_32
+* temp_32, temp_30, temp_31
+[]= t, temp_29, temp_32
+. temp_33
+= temp_33, j
+. temp_34
+= temp_34, j
+. temp_35
+= temp_35, 2
+. temp_36
+* temp_36, temp_34, temp_35
+[]= t, temp_33, temp_36
+. temp_37
+= temp_37, i
+=[] k, t, temp_37
+. temp_38
+= temp_38, i
+. temp_39
+= temp_39, j
+. temp_40
+=[] temp_40, t, temp_39
+[]= t, temp_38, temp_40
+. temp_41
+= temp_41, j
+. temp_42
+= temp_42, k
+[]= t, temp_41, temp_42
+: label_3
+: while_loop_2
+. temp_43
+= temp_43, i
+. temp_44
+= temp_44, j
+. temp_45
+>= temp_45, temp_43, temp_44
+. temp_46
+= temp_46, 0
+. temp_47
+|| temp_47, temp_45, temp_46
+. temp_48
+== temp_48, temp_47, 0
+?:= label_4, temp_48
+. temp_49
+= temp_49, 1
+. temp_50
+= temp_50, i
+. temp_51
+= temp_51, j
+. temp_52
+- temp_52, temp_50, temp_51
+. temp_53
++ temp_53, temp_49, temp_52
+. temp_54
+= temp_54, 3
+. temp_55
+% temp_55, temp_53, temp_54
+= k, temp_55
+. temp_56
+= temp_56, i
+. temp_57
+= temp_57, 1
+. temp_58
+- temp_58, temp_56, temp_57
+= i, temp_58
+. temp_59
+= temp_59, k
+. temp_60
+= temp_60, 1
+. temp_61
+> temp_61, temp_59, temp_60
+?:= label_5, temp_61
+:= label_6
+: label_5
+:= while_loop_2
+: label_6
+.> k
+:= while_loop_2
+: label_4
+.> i
+.> j
+.> k
+. temp_62
+= temp_62, i
+. temp_63
+= temp_63, n
+. temp_64
+< temp_64, temp_62, temp_63
+. temp_65
+= temp_65, i
+. temp_66
+= temp_66, 0
+. temp_67
+>= temp_67, temp_65, temp_66
+. temp_68
+&& temp_68, temp_64, temp_67
+?:= label_7, temp_68
+:= label_8
+: label_7
+. temp_69
+= temp_69, i
+.[]> t, temp_69
+: label_8
+. temp_70
+= temp_70, j
+. temp_71
+= temp_71, n
+. temp_72
+< temp_72, temp_70, temp_71
+. temp_73
+= temp_73, j
+. temp_74
+= temp_74, 0
+. temp_75
+>= temp_75, temp_73, temp_74
+. temp_76
+&& temp_76, temp_72, temp_75
+?:= label_9, temp_76
+:= label_10
+: label_9
+. temp_77
+= temp_77, j
+.[]> t, temp_77
+: label_10
+endfunc

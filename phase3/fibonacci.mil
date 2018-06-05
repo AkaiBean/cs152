@@ -1,0 +1,50 @@
+func fibonacci
+. k
+= k, $0
+. temp_0
+= temp_0, k
+. temp_1
+= temp_1, 1
+. temp_2
+<= temp_2, temp_0, temp_1
+?:= label_0, temp_2
+:= label_1
+: label_0
+. temp_3
+= temp_3, 1
+ret temp_3
+: label_1
+. temp_4
+= temp_4, k
+. temp_5
+= temp_5, 1
+. temp_6
+- temp_6, temp_4, temp_5
+param temp_6
+. temp_7
+call fibonacci, temp_7
+. temp_8
+= temp_8, k
+. temp_9
+= temp_9, 2
+. temp_10
+- temp_10, temp_8, temp_9
+param temp_10
+. temp_11
+call fibonacci, temp_11
+. temp_12
++ temp_12, temp_7, temp_11
+ret temp_12
+endfunc
+func main
+. n
+. fib_n
+.< n
+. temp_13
+= temp_13, n
+param temp_13
+. temp_14
+call fibonacci, temp_14
+= fib_n, temp_14
+.> fib_n
+endfunc
